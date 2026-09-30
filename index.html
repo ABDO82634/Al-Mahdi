@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المهدي للأجهزة الكهربائية والتقسيط | حوش عيسى</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛍️</text></svg>">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            800: '#991b1b',
+                            dark: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #fafafa;
+            color: #0f172a;
+        }
+
+        .hero-bg {
+            background: radial-gradient(circle at top right, #fff1f2 0%, #ffffff 60%, #fff1f2 100%);
+        }
+
+        .luxury-card {
+            background: #ffffff;
+            border: 1px solid #fee2e2;
+            box-shadow: 0 10px 25px -5px rgba(220, 38, 38, 0.05);
+        }
+
+        .luxury-card:hover {
+            box-shadow: 0 20px 35px -5px rgba(220, 38, 38, 0.15);
+            transform: translateY(-4px);
+            border-color: #fca5a5;
+        }
+
+        .pulse-subtle {
+            animation: pulse-ring 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #dc2626;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="antialiased min-h-screen flex flex-col justify-between selection:bg-brand-600 selection:text-white">
+
+    <!-- Top Interactive Bar -->
+    <div
+        class="bg-gradient-to-r from-brand-700 via-brand-600 to-brand-700 text-white text-xs sm:text-sm py-2.5 px-4 text-center font-bold tracking-wide shadow-md flex justify-center items-center gap-2">
+        <span class="inline-block animate-bounce"><i class="fa-solid fa-gift text-yellow-300"></i></span>
+        <span>عروض التقسيط المباشر بدون مقدم متوفرة الآن في حوش عيسى والقرينين!</span>
+        <span class="hidden md:inline">| اضغط لأي منتج واستفسر فوراً</span>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div
+                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center text-white text-2xl shadow-lg shadow-brand-600/20">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-tight text-slate-900 block leading-tight">المهدي</span>
+                    <span class="text-xs font-bold text-brand-600 tracking-wider block">للأجهزة والتقسيط المباشر</span>
+                </div>
+            </a>
+
+            <!-- Direct Contact Button Header -->
+            <a href="https://wa.me/201000323854?text=السلام%20عليكم،%20حابب%20استفسر%20عن%20عروض%20التقسيط%20بدون%20مقدم"
+                target="_blank" rel="noopener noreferrer"
+                class="bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold px-5 py-3 rounded-2xl transition-all duration-300 flex items-center gap-2.5 shadow-md shadow-emerald-500/20 hover:scale-105">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span class="text-sm">استفسر عن قسطك الآن</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-bg relative py-12 md:py-20 border-b border-brand-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+
+                <div class="lg:col-span-7 text-center lg:text-right space-y-6">
+                    <div
+                        class="inline-flex items-center gap-2 bg-brand-50 border border-brand-200 text-brand-700 font-extrabold px-4 py-2 rounded-full text-xs sm:text-sm shadow-sm">
+                        <i class="fa-solid fa-fire text-brand-600"></i>
+                        <span>الفرع الأول للأجهزة المنزلية والموبايلات في حوش عيسى</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight">
+                        جدد بيتك أو الموبايل <br class="hidden sm:block">
+                        <span class="text-brand-600">بدون مقدم وبأسهل قسط!</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 font-bold max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                        اختر أي جهاز يناسبك، اضغط واستفسر فوراً عبر الواتساب لمعرفة نظام التقسيط المخصص لك، الأوراق
+                        المطلوبة، وخصومات الكاش الممتازة!
+                    </p>
+
+                    <!-- Marketing Callout Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="https://wa.me/201000323854?text=السلام%20عليكم،%20حابب%20اعرف%20الأوراق%20المطلوبة%20ونظام%20التقسيط"
+                            target="_blank" rel="noopener noreferrer"
+                            class="bg-brand-600 hover:bg-brand-700 text-white font-extrabold px-8 py-4 rounded-2xl shadow-xl shadow-brand-600/25 transition-all duration-300 flex items-center justify-center gap-3 text-lg hover:scale-105">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>احسب قسطك بالتفصيل عبر الواتساب</span>
+                        </a>
+                        <a href="#products"
+                            class="bg-white hover:bg-brand-50 text-slate-800 font-bold px-6 py-4 rounded-2xl border border-brand-200 shadow-sm transition-all flex items-center justify-center gap-2 text-base">
+                            <i class="fa-solid fa-bolt text-brand-600"></i>
+                            <span>تصفح المنتجات المتاحة</span>
+                        </a>
+                    </div>
+
+                    <!-- Marketing Guarantees -->
+                    <div
+                        class="grid grid-cols-3 gap-3 pt-6 border-t border-brand-200/60 max-w-lg mx-auto lg:mx-0 text-center">
+                        <div class="p-2">
+                            <span class="block text-xl font-black text-brand-600"><i
+                                    class="fa-solid fa-check-circle"></i> بدون مقدم</span>
+                            <span class="text-xs font-bold text-slate-500">استلم أول الشهر</span>
+                        </div>
+                        <div class="p-2">
+                            <span class="block text-xl font-black text-brand-600"><i class="fa-solid fa-shield"></i>
+                                ضمان معتمد</span>
+                            <span class="text-xs font-bold text-slate-500">أجهزة أصلية 100%</span>
+                        </div>
+                        <div class="p-2">
+                            <span class="block text-xl font-black text-brand-600"><i class="fa-solid fa-truck-fast"></i>
+                                تسليم سريع</span>
+                            <span class="text-xs font-bold text-slate-500">فوري داخل حوش عيسى</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Hot Product Callout Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div
+                        class="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border-2 border-brand-100 relative w-full max-w-md space-y-6">
+                        <div class="flex justify-between items-center">
+                            <span
+                                class="bg-brand-600 text-white font-black text-xs px-3 py-1.5 rounded-full shadow-sm">الأكثر
+                                طلباً🔥</span>
+                            <span
+                                class="text-xs font-extrabold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">0%
+                                مقدم</span>
+                        </div>
+
+                        <div class="text-center">
+                            <div
+                                class="w-full h-48 rounded-2xl overflow-hidden mb-4 bg-slate-50 flex items-center justify-center">
+                                <img src="download (3).jfif" alt="آيفون 17 برو ماكس"
+                                    class="max-h-full object-contain p-2">
+                            </div>
+                            <h3 class="text-2xl font-black text-slate-900">آيفون 17 برو ماكس</h3>
+                            <p class="text-xs font-bold text-slate-500 mt-1">iPhone 17 Pro Max</p>
+                        </div>
+
+                        <div class="bg-brand-50/80 rounded-2xl p-4 text-center border border-brand-200">
+                            <span class="text-xs font-bold text-slate-600 block mb-1">القسط الشهري المميز</span>
+                            <span class="text-3xl font-black text-brand-600">2,975 <span
+                                    class="text-sm font-bold text-slate-800">ج.م/شهرياً</span></span>
+                            <span class="text-[11px] font-bold text-slate-500 block mt-1">بدون مقدم نهائياً</span>
+                        </div>
+
+                        <a href="https://wa.me/201000323854?text=السلام%20عليكم،%20حابب%20استفسر%20عن%20تفاصيل%20وتسهيلات%20تقسيط%20آيفون%2017%20برو%20ماكس"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold py-3.5 rounded-2xl shadow-lg transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>استفسر عن القسط والشروط بالواتساب</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Catalog Section -->
+    <section id="products" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Title -->
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-brand-600 font-extrabold text-sm tracking-wider uppercase block mb-1">معرض العروض
+                الحصرية</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mb-3">
+                اختر جهازك واعرف <span class="text-brand-600">عرضك الخاص فوراً</span>
+            </h2>
+            <p class="text-slate-600 font-bold text-sm sm:text-base">اضغط على زر الواتساب المباشر أسفل أي منتج لمعرفة
+                الأوراق المطلوبة وتفاصيل الاستلام</p>
+        </div>
+
+        <!-- Filter Buttons & Search -->
+        <div class="bg-white p-4 sm:p-5 rounded-3xl shadow-sm border border-brand-100 mb-8 space-y-4">
+            <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
+
+                <!-- Search Bar -->
+                <div class="relative w-full md:w-80">
+                    <i
+                        class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+                    <input type="text" id="search-input" onkeyup="filterProducts()"
+                        placeholder="ابحث عن منتج (مثال: LG, توشيبا, آيفون...)"
+                        class="w-full bg-slate-50 border border-slate-200 rounded-2xl py-3 pr-11 pl-4 text-sm font-bold text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition-all">
+                </div>
+
+                <!-- Category Filters -->
+                <div class="flex flex-wrap gap-2 w-full md:w-auto justify-center">
+                    <button onclick="setCategory('all', event)"
+                        class="cat-btn active bg-brand-600 text-white font-bold px-5 py-2.5 rounded-2xl text-sm transition-all shadow-sm">الكل</button>
+                    <button onclick="setCategory('appliances', event)"
+                        class="cat-btn bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold px-5 py-2.5 rounded-2xl text-sm transition-all">أجهزة
+                        منزلية وشاشات</button>
+                    <button onclick="setCategory('phones', event)"
+                        class="cat-btn bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold px-5 py-2.5 rounded-2xl text-sm transition-all">موبايلات
+                        هواتف ذكية</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Dynamically populated via JS -->
+        </div>
+
+        <!-- No Products Message -->
+        <div id="no-products"
+            class="hidden text-center py-16 bg-white rounded-3xl border border-dashed border-slate-200 mt-6">
+            <i class="fa-solid fa-box-open text-5xl text-slate-300 mb-3"></i>
+            <h3 class="text-lg font-bold text-slate-700">لا توجد نتائج تطابق بحثك</h3>
+            <p class="text-sm text-slate-500 mt-1">تواصل معنا عبر الواتساب وسنوفر لك الجهاز المطلوب فوراً</p>
+            <a href="https://wa.me/201000323854?text=السلام%20عليكم،%20حابب%20استفسر%20عن%20جهاز%20غير%20موجود%20على%20الموقع"
+                target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-emerald-500 text-white font-bold px-6 py-2.5 rounded-2xl mt-4">
+                <i class="fa-brands fa-whatsapp"></i> استفسر عن جهاز آخر
+            </a>
+        </div>
+
+    </section>
+
+    <!-- High Conversion Hook Section -->
+    <section class="py-12 bg-gradient-to-r from-brand-700 to-brand-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="text-2xl sm:text-4xl font-black">عايز تعرف العروض الحصرية وخصومات التقسيط والسداد؟</h2>
+            <p class="text-brand-100 max-w-2xl mx-auto text-sm sm:text-base font-medium">فريق المبيعات جاهز فوراً للرد
+                عليك وإطلاعك على أسهل الأوراق المطلوبة لتستلم جهازك بدون مقدم وبأسرع وقت.</p>
+            <a href="https://wa.me/201000323854?text=السلام%20عليكم،%20حابب%20اعرف%20العروض%20الحصرية%20والتسهيلات%20عندكم"
+                target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-3 bg-white text-brand-700 hover:bg-brand-50 font-black text-lg px-8 py-4 rounded-2xl shadow-xl transition-all duration-300 hover:scale-105">
+                <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+                <span>اضغط للدردشة المباشرة مع المبيعات</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Store Location and Contact Section -->
+    <section id="about" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl p-6 sm:p-12 shadow-sm border border-brand-100">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+
+                <div class="space-y-6">
+                    <div
+                        class="inline-flex items-center gap-2 bg-brand-50 text-brand-700 font-extrabold px-4 py-1.5 rounded-full text-xs">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>عنوان المعرض</span>
+                    </div>
+
+                    <h2 class="text-3xl font-black text-slate-900">معرض المهدي للأدوات المنزلية والتقسيط</h2>
+
+                    <p class="text-slate-600 leading-relaxed font-bold text-sm sm:text-base">
+                        يسعدنا تشريفكم لنا في الفرع لمعاينة الأجهزة على الطبيعة والاستلام الفوري بأبسط الإجراءات.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">العنوان:</h4>
+                                <p class="text-sm font-bold text-slate-600">حوش عيسى - القرينين - مركز حوش عيسى</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">الهاتف والواتساب المباشر:</h4>
+                                <a href="tel:+201000323854"
+                                    class="text-base font-black text-brand-600 hover:underline">01000323854</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Action Card -->
+                <div
+                    class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-8 relative overflow-hidden flex flex-col justify-between min-h-[280px] shadow-xl">
+                    <div class="space-y-3">
+                        <span class="bg-brand-600 text-white text-xs font-black px-3 py-1 rounded-full">مركز حوش
+                            عيسى</span>
+                        <h3 class="text-2xl font-black">طريقة الوصول للمحل</h3>
+                        <p class="text-slate-300 text-sm font-bold">القرينين - حوش عيسى</p>
+                    </div>
+
+                    <div class="space-y-4 pt-6">
+                        <a href="https://wa.me/201000323854?text=السلام%20عليكم،%20ممكن%20ترسلوا%20لي%20موقع%20المعرض%20أو%20العنوان%20بالظبط"
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold py-3.5 rounded-2xl transition-all text-center block text-sm shadow-md">
+                            <i class="fa-brands fa-whatsapp text-lg ml-2"></i>
+                            إرسال موقع المحل عبر الواتساب
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/201000323854?text=السلام%20عليكم،%20حابب%20استفسر%20عن%20عروض%20التقسيط%20في%20معرض%20المهدي"
+        target="_blank" rel="noopener noreferrer"
+        class="pulse-subtle fixed bottom-6 left-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl transition-all duration-300 group">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span
+            class="absolute right-20 bg-slate-900 text-white text-xs font-bold px-3 py-2 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">تواصل
+            مباشر مع المبيعات</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
+            <div class="flex items-center justify-center gap-2 text-brand-500 font-extrabold text-lg">
+                <i class="fa-solid fa-store"></i>
+                <span>معرض المهدي للأجهزة والتقسيط</span>
+            </div>
+            <p class="text-slate-400 text-xs font-bold">حوش عيسى - القرينين | 01000323854</p>
+            <p class="text-[11px] text-slate-500 pt-3 border-t border-slate-800">&copy; جميع الحقوق محفوظة لمعرض المهدي
+            </p>
+        </div>
+        <!-- شريط التنبيه الخاص بالرابط المحلي -->
+        <div class="notice-badge">
+            ⚠️ تنبيه: هذا رابط استعراض محلي (تجريبي) وغير متاح على محركات البحث أو كـ دومين أساسي.
+        </div>
+    </footer>
+
+    <!-- Application Logic Script -->
+    <script>
+        // Exact 8 Specified Products Database with Your Uploaded Images
+        const products = [
+            {
+                id: 1,
+                title: "شاشة LG 55",
+                category: "appliances",
+                installment: 642,
+                image: "download.jfif",
+                badge: "بدون مقدم",
+                desc: "شاشة سمارت بدقة ممتازة وألوان واقعية جداً."
+            },
+            {
+                id: 2,
+                title: "شاشة LG 65",
+                category: "appliances",
+                installment: 799,
+                image: "images.jpg",
+                badge: "بدون مقدم",
+                desc: "شاشة سينمائية عملاقة تجعلك في قلب الحدث."
+            },
+            {
+                id: 3,
+                title: "شاشة LG 43",
+                category: "appliances",
+                installment: 485,
+                image: "shopping.webp",
+                badge: "بدون مقدم",
+                desc: "حجم مثالي وعصري يناسب جميع الغرف والمساحات."
+            },
+            {
+                id: 4,
+                title: "ثلاجة توشيبا 14 قدم",
+                category: "appliances",
+                installment: 579,
+                image: "download (1).jfif",
+                badge: "بدون مقدم",
+                desc: "التبريد القوي الموثوق به والتوفير العالي للكهرباء."
+            },
+            {
+                id: 5,
+                title: "غسالة أطباق بيكو 14 فرد",
+                category: "appliances",
+                installment: 642,
+                image: "download (2).jfif",
+                badge: "بدون مقدم",
+                desc: "راحة وسعة كبيرة تكفي العائلة وتوفر في المسحوق والماء."
+            },
+            {
+                id: 6,
+                title: "آيفون 17 برو ماكس",
+                category: "phones",
+                installment: 2975,
+                image: "download (3).jfif",
+                badge: "بدون مقدم",
+                desc: "الهاتف الأكثر طلباً وفخامة بأسلوب تقسيط مريح."
+            },
+            {
+                id: 7,
+                title: "سامسونج S26 ألترا 256/12",
+                category: "phones",
+                installment: 2193,
+                image: "shopping (2).webp",
+                badge: "بدون مقدم",
+                desc: "قوة الأداء والكاميرات الاحترافية المساحة 256 مع 12 رام."
+            },
+            {
+                id: 8,
+                title: "ريدمي نوت 15 5G",
+                category: "phones",
+                installment: 590,
+                image: "download (4).jfif",
+                badge: "بدون مقدم",
+                desc: "سرعات الـ 5G المتطورة مع أقوى بطارية وقيمة مقابل سعر."
+            }
+        ];
+
+        let currentCategory = 'all';
+        const whatsappNumber = "201000323854";
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts(products);
+        });
+
+        // Render Cards with Product Images
+        function renderProducts(items) {
+            const grid = document.getElementById('products-grid');
+            const noProducts = document.getElementById('no-products');
+
+            if (items.length === 0) {
+                grid.innerHTML = '';
+                noProducts.classList.remove('hidden');
+                return;
+            }
+
+            noProducts.classList.add('hidden');
+            grid.innerHTML = items.map(product => {
+                const message = encodeURIComponent(`السلام عليكم، حابب أستفسر عن تقسيط (${product.title}) المذكور بقسط ${product.installment} ج.م/شهرياً بدون مقدم. إيه الأوراق المطلوبة والتفاصيل؟`);
+
+                return `
+                    <div class="luxury-card rounded-3xl p-5 transition-all duration-300 flex flex-col justify-between relative group">
+                        
+                        <span class="absolute top-4 right-4 bg-brand-600 text-white text-xs font-black px-3 py-1 rounded-full shadow-md z-10">
+                            ${product.badge}
+                        </span>
+
+                        <div>
+                            <div class="h-44 bg-slate-50 rounded-2xl overflow-hidden mb-4 group-hover:scale-105 transition-transform flex items-center justify-center p-2">
+                                <img src="${product.image}" alt="${product.title}" class="max-h-full max-w-full object-contain">
+                            </div>
+
+                            <h3 class="font-black text-slate-900 text-lg leading-snug mb-1">${product.title}</h3>
+                            <p class="text-xs font-bold text-slate-500 mb-4">${product.desc}</p>
+                        </div>
+
+                        <div class="space-y-3 pt-3 border-t border-slate-100">
+                            <div class="bg-brand-50/80 p-3 rounded-2xl border border-brand-100 text-center">
+                                <span class="text-[11px] font-bold text-slate-500 block">القسط الشهري المباشر</span>
+                                <span class="text-2xl font-black text-brand-600">${product.installment} <span class="text-xs font-bold text-slate-800">ج.م/شهرياً</span></span>
+                            </div>
+
+                            <a href="https://wa.me/${whatsappNumber}?text=${message}" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold py-3 rounded-xl text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow-emerald-500/20">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>استفسر عن القسط بالواتساب</span>
+                            </a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Filter Categories
+        function setCategory(category, evt) {
+            currentCategory = category;
+
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white', 'shadow-sm');
+                btn.classList.add('bg-slate-100', 'text-slate-700');
+            });
+
+            if (evt && evt.currentTarget) {
+                evt.currentTarget.classList.remove('bg-slate-100', 'text-slate-700');
+                evt.currentTarget.classList.add('bg-brand-600', 'text-white', 'shadow-sm');
+            }
+
+            filterProducts();
+        }
+
+        // Combined Filter and Search Logic
+        function filterProducts() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+
+            const filtered = products.filter(product => {
+                const matchesCategory = currentCategory === 'all' || product.category === currentCategory;
+                const matchesQuery = product.title.toLowerCase().includes(query) || product.desc.toLowerCase().includes(query);
+                return matchesCategory && matchesQuery;
+            });
+
+            renderProducts(filtered);
+        }
+    </script>
+</body>
+
+</html>
